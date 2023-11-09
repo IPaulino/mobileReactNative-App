@@ -6,13 +6,13 @@ import Contador from './components/Contador';
 
 function NewApp (){
     return (
-
         <View style={style.AppNew}>
             {/*<Primeiro/>
             <MaxMin max={100} min={100}/>*/}
 
-        <Contador inicial={100} passo={10}/>
+        <Contador inicial={100} passo={5}/>
         <Contador/>
+
         </View>
     )
 }

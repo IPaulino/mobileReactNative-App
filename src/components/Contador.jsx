@@ -15,13 +15,14 @@ const Contador = ({inicial=0, passo =1}) => {
          setNumero(numero - passo);
      }
 
-     const parImpar = _=> numero % 2 == 0 ? setResultado("Par"):setResultado("Impar")
-     
+     const parImpar = _=> numero % 2 == 0 ? setResultado("Par") : setResultado("Impar")
+
   return (
-        <>
+    <>
         <Text>
             {resultado}
         </Text>
+
         <Text>
             {numero}
         </Text>
@@ -41,9 +42,7 @@ const Contador = ({inicial=0, passo =1}) => {
             />
 
         </View>
-        
     </>
-
   )
 }
 
