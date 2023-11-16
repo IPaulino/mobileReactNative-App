@@ -1,30 +1,31 @@
 import React, {useState} from 'react'
 import { View, TextInput, Button } from 'react-native'
 
-const ListaProduto = () => {
+const Formulario = () => {
 
-  let [nome, setNome] = useState('')
   let [email, setEmail] = useState('')
+  let [senha, setSenha] = useState('')
 
   const exibirDados = _=>{
-    console.warn({nome, email})
+    console.warn({email, senha})
   }
 
   return (
     <View>
         <TextInput
         style={{borderBottomWidth: 2.0}}
-        placeholder='Digite seu nome'
-        value={nome}
-        onChangeText={nome => setNome(nome)}
+        placeholder='Digite seu email'
+        value={email}
+        onChangeText={email => setEmail(email)}
 
         />
 
         <TextInput
         style={{borderBottomWidth: 2.0}}
-        placeholder='Digite seu e-mail'
-        value={email}
-        onChangeText={email => setEmail(email)}
+        placeholder='Digite sua senha'
+        value={senha}
+        onChangeText={senha => setSenha(senha)}
+        secureTextEntry={true}
 
         />
       
@@ -39,4 +40,4 @@ const ListaProduto = () => {
   )
 }
 
-export default ListaProduto
+export default Formulario

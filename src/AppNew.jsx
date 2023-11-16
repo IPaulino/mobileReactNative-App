@@ -3,7 +3,7 @@ import Primeiro from './components/Primeiro';
 import {View, StyleSheet} from 'react-native';
 import MaxMin from './components/MaxMin';
 import Contador from './components/Contador';
-import ListaProduto from './components/ListaProduto';
+import Formulario from './components/Formulario';
 
 function NewApp (){
     return (
@@ -15,7 +15,7 @@ function NewApp (){
             
             */}
 
-        <ListaProduto/>
+        <Formulario/>
 
         </View>
     )
